@@ -21,8 +21,6 @@ Additionally, React components are centered more around UI containers as opposed
 
 Styling is also done differently between these two JS frameworks. In Angular, each component has an external style sheet intended to style only its corresponding component. Traditional CSS syntax is used. However, in React, CSS can be implemented either CSS objects or modules, which are scoped locally to a specific component, unless a global tag is specifically employed.
 
-As for routing,
-
 
 ### Installing
 
@@ -60,7 +58,16 @@ ng serve --open
 
 ## Notes
 
-Add a notes section where you document unforeseen issues and questions during your development process. Commit these notes by themselves.
+Unforeseen issues / questions:
+
+* How to include Edit and Sell Button Components for only Admins and not Patrons e.g. If-statements based on URL route
+
+* How to dynamically change data e.g. add a keg delete or edit a keg on the masterKegList.
+
+* How to implement a styling framework like Google Materialize
+
+
+
 
 ## Author
 
