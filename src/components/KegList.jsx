@@ -1,5 +1,6 @@
 import React from 'react';
-import Keg from './Keg'
+import Keg from './Keg';
+import SortBar from './SortBar';
 
 var masterKegList = [
 
@@ -52,6 +53,8 @@ var masterKegList = [
 function KegList(){
   return (
     <div>
+      <h1>Keg List</h1>
+      <SortBar/>
       <style jsx>{`
           div {
             background-color: #59D2FF;
