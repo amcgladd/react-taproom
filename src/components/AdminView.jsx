@@ -3,7 +3,7 @@ import KegList from './KegList';
 import TapKeg from './TapKeg';
 import EditKeg from './EditKeg';
 
-function AdminView(props){
+function AdminView(){
   return (
     <div>
       <style jsx>{`

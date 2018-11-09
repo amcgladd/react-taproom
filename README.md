@@ -72,6 +72,8 @@ Unforeseen issues / questions:
 
 * How does data sorting / piping occur in React?
 
+* Using DropDown selector for Type chooser in Tap and Edit Keg components
+
 ## Author
 
 * **AJ Mcgladdery** - [Github](https://github.com/amcgladd)
