@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 // import PropTypes from "prop-types";
 import KegList from './KegList';
 import TapKeg from './TapKeg';
+import EditKeg from './EditKeg';
 
 function AdminView(props){
   return (
@@ -11,9 +12,10 @@ function AdminView(props){
             background-color: lightBlue;
           }
         `}</style>
-        <p>Admin View Works!</p>
-        <KegList/>
-        <TapKeg/>
+      <p>Admin View Works!</p>
+      <KegList/>
+      <TapKeg/>
+      <EditKeg/>
       <hr/>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import { dropdown } from 'react-bootstrap';
 
 function SortBar(){
   return (
@@ -11,8 +10,8 @@ function SortBar(){
         <option value="price">Price</option>
         <option value="abv">ABV</option>
       </select>
-   </div>
-  )
+    </div>
+  );
 }
 
 export default SortBar;

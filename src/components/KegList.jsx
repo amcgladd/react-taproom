@@ -46,14 +46,14 @@ var masterKegList = [
     price: '6',
     remaining: '58'
   }
-]
+];
 
 
 
 function KegList(){
   return (
     <div>
-    <h1>Keg List</h1>
+      <h1>Keg List</h1>
       <SortBar/>
       <style jsx>{`
           div {
@@ -67,9 +67,9 @@ function KegList(){
           abv={keg.abv}
           remaining={keg.remaining}
           key={index}/>
-        )}
-      </div>
-    );
-  }
+      )}
+    </div>
+  );
+}
 
-  export default KegList;
+export default KegList;

@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Keg(props){
   return (
@@ -10,10 +10,10 @@ function Keg(props){
           }
         `}</style>
       <h3>Name: {props.name}</h3>
-        <h3>Type: {props.type}</h3>
-        <h3>Price: {props.price}</h3>
-        <h3>ABV: {props.abv}</h3>
-        <h3>Remaining: {props.remaining}</h3>
+      <h3>Type: {props.type}</h3>
+      <h3>Price: {props.price}</h3>
+      <h3>ABV: {props.abv}</h3>
+      <h3>Remaining: {props.remaining}</h3>
       <hr/>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
-import AddButton from './AddButton';
+import DoneButton from './DoneButton';
 
-function TapKegInput() {
+function EditKegInput() {
   return (
     <div>
       <form>
@@ -25,10 +25,10 @@ function TapKegInput() {
           <label>Remaining:
             <input type="text" /></label>
         </div>
-        <AddButton/>
+        <DoneButton/>
       </form>
     </div>
   );
 }
 
-export default TapKegInput;
+export default EditKegInput;

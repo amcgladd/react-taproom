@@ -5,7 +5,7 @@ function AddButton() {
     <div>
       <button type="button">Add</button>
     </div>
-  )
+  );
 }
 
 export default AddButton;

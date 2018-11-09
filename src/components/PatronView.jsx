@@ -6,10 +6,15 @@ import SortBar from './SortBar';
 function PatronView() {
   return (
     <div>
-      <h1>Patron View Works!</h1>
+      <style jsx>{`
+          div {
+            background-color: lightBlue;
+          }
+        `}</style>
+      <p>Patron View Works!</p>
       <KegList/>
     </div>
-  )
+  );
 }
 
 export default PatronView;
