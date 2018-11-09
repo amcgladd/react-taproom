@@ -52,9 +52,14 @@ var masterKegList = [
 function KegList(){
   return (
     <div>
+      <style jsx>{`
+          div {
+            background-color: #59D2FF;
+          }
+        `}</style>
       {masterKegList.map((keg, index) =>
         <Keg name={keg.name}
-          location={keg.type}
+          type={keg.type}
           price={keg.price}
           abv={keg.abv}
           remaining={keg.remaining}

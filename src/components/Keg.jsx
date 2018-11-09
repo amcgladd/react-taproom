@@ -4,6 +4,11 @@ import PropTypes from "prop-types";
 function Keg(props){
   return (
     <div>
+      <style jsx>{`
+          div {
+            background-color: lightBlue;
+          }
+        `}</style>
       <h3>Name: {props.name}</h3>
         <h3>Type: {props.type}</h3>
         <h3>Price: {props.price}</h3>
