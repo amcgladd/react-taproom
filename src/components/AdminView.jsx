@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from "prop-types";
 import KegList from './KegList';
 import TapKeg from './TapKeg';
 import EditKeg from './EditKeg';

@@ -3,7 +3,7 @@ import React from 'react';
 function SortBar(){
   return (
     <div>
-      <h1>Sort By: </h1>
+      <h3>Sort By: </h3>
       <select>
         <option value="name">Name</option>
         <option value="type">Type</option>

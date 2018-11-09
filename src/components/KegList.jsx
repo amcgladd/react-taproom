@@ -66,7 +66,8 @@ function KegList(){
           price={keg.price}
           abv={keg.abv}
           remaining={keg.remaining}
-          key={index}/>
+          key={index}
+        />
       )}
     </div>
   );

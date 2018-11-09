@@ -8,6 +8,11 @@ import AdminView from './AdminView';
 function App(){
   return (
     <div>
+      <style jsx>{`
+          div {
+            font-family: 'Montserrat', sans-serif;;
+          }
+        `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={PatronView} />

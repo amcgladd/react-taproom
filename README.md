@@ -67,8 +67,6 @@ Unforeseen issues / questions:
 * How to implement a styling framework like Google Materialize
 
 
-
-
 ## Author
 
 * **AJ Mcgladdery** - [Github](https://github.com/amcgladd)
