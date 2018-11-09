@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 function Keg(props){
   return (
     <div>
-      <h3>{props.name}</h3>
-        <h3>{props.type}</h3>
-        <h3>{props.price}</h3>
-        <h3>{props.abv}</h3>
-        <h3>{props.remaining}</h3>
+      <h3>Name: {props.name}</h3>
+        <h3>Type: {props.type}</h3>
+        <h3>Price: {props.price}</h3>
+        <h3>ABV: {props.abv}</h3>
+        <h3>Remaining: {props.remaining}</h3>
       <hr/>
     </div>
   );
