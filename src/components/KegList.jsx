@@ -53,7 +53,7 @@ var masterKegList = [
 function KegList(){
   return (
     <div>
-      <h1>Keg List</h1>
+    <h1>Keg List</h1>
       <SortBar/>
       <style jsx>{`
           div {
