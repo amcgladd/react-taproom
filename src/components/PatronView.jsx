@@ -6,6 +6,7 @@ import SortBar from './SortBar';
 function PatronView() {
   return (
     <div>
+      <h1>Patron View Works!</h1>
       <KegList/>
     </div>
   )
