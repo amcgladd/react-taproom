@@ -14,6 +14,10 @@ function Keg(props){
       <h3>Price: {props.price}</h3>
       <h3>ABV: {props.abv}</h3>
       <h3>Remaining: {props.remaining}</h3>
+      {/* i want these buttons only for admin*/}
+      <button>Edit</button>
+      <button>Sell</button>
+      <button>Delete</button>
       <hr/>
     </div>
   );
