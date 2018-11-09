@@ -68,6 +68,10 @@ Unforeseen issues / questions:
 
 * How to include html for buttons in a JSX loop without them being props of the data
 
+* Alternatively, should each button be a subcomponent of the keg component?
+
+* How does data sorting / piping occur in React?
+
 ## Author
 
 * **AJ Mcgladdery** - [Github](https://github.com/amcgladd)
