@@ -5,23 +5,26 @@ function Header(){
   return (
     <div>
       <style jsx>{`
-          div {
-            background-color: #7CE7C9;
-          }
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
           ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
+            padding: 10px;
             }
             li {
               display: inline;
+              margin-right: 20px;
             }
         `}</style>
       <h1>Keg World</h1>
-        <ul>
-          <li><Link to="/">Patron</Link></li>
-          <li><Link to="/adminview">Admin</Link></li>
-        </ul>
+      <ul>
+        <li><Link to="/">Patron</Link></li>
+        <li><Link to="/adminview">Admin</Link></li>
+      </ul>
     </div>
   );
 }

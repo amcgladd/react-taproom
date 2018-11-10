@@ -10,6 +10,7 @@ function App(){
     <div>
       <style jsx>{`
           div {
+            background-color: #EDB749;
             font-family: 'Montserrat', sans-serif;;
           }
         `}</style>
