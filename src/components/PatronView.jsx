@@ -9,7 +9,6 @@ function PatronView() {
             background-color: lightGreen;
           }
         `}</style>
-      <p>Patron View Works!</p>
       <KegList/>
     </div>
   );

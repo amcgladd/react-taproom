@@ -11,7 +11,6 @@ function AdminView(){
             background-color: lightBlue;
           }
         `}</style>
-      <p>Admin View Works!</p>
       <KegList/>
       <TapKeg/>
       <EditKeg/>
