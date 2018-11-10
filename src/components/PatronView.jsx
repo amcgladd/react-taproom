@@ -7,6 +7,10 @@ function PatronView() {
       <style jsx>{`
           div {
             background-color: lightGreen;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
           }
         `}</style>
       <KegList/>

@@ -53,6 +53,12 @@ var masterKegList = [
 function KegList(){
   return (
     <div>
+      <style jsx>{`
+        div {
+          width: 300px;
+          background-color: #A3E6C8;
+        }
+        `}</style>
       <h1>Keg List</h1>
       <SortBar/>
       {masterKegList.map((keg, index) =>

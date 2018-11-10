@@ -7,14 +7,24 @@ function AdminView(){
   return (
     <div>
       <style jsx>{`
-          div {
-            background-color: lightBlue;
-          }
+        div {
+          background-color: #9BB5F0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+        } .stack-vertical {
+          display: flex;
+          flex-direction: column;
+        }
         `}</style>
-      <KegList/>
-      <TapKeg/>
-      <EditKeg/>
-      <hr/>
+        <div>
+          <KegList/>
+        </div>
+        <div className="stack-vertical">
+          <TapKeg/>
+          <EditKeg/>
+        </div>
     </div>
   );
 }
