@@ -19,4 +19,9 @@ function PatronView({ kegList }) {
   );
 }
 
+PatronView.propTypes = {
+  kegList: PropTypes.array,
+  currentRouterPath: PropTypes.string
+};
+
 export default PatronView;

@@ -3,7 +3,7 @@ import Keg from './Keg';
 import SortBar from './SortBar';
 import PropTypes from 'prop-types';
 
-function KegList({ kegList }){
+function KegList(props){
 
   return (
     <div>
@@ -15,12 +15,13 @@ function KegList({ kegList }){
         `}</style>
       <h1>Keg List</h1>
       <SortBar/>
-      {kegList.map((keg, index) =>
+      {props.kegList.map((keg, index) =>
         <Keg name={keg.name}
           type={keg.type}
           price={keg.price}
           abv={keg.abv}
           remaining={keg.remaining}
+          currentRouterPath={props.currentRouterPath}
           key={index}
         />
       )}
@@ -34,7 +35,8 @@ KegList.propTypes = {
   type: PropTypes.string,
   price: PropTypes.number,
   abv: PropTypes.number,
-  remaining: PropTypes.number
+  remaining: PropTypes.number,
+  currentRouterPath: PropTypes.string
 };
 
 export default KegList;

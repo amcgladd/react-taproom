@@ -4,8 +4,7 @@ import TapKeg from './TapKeg';
 import EditKeg from './EditKeg';
 import PropTypes from  'prop-types';
 
-function AdminView(props, {currentRouterPath}){
-console.log(props.currentRouterPath);
+function AdminView(props){
   return (
     <div>
       <style jsx>{`
@@ -21,7 +20,7 @@ console.log(props.currentRouterPath);
         }
         `}</style>
       <div>
-        <KegList kegList={props.kegList}/>
+        <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath}/>
       </div>
       <div className="stack-vertical">
         <TapKeg/>
