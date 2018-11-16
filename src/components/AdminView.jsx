@@ -23,7 +23,7 @@ function AdminView(props){
         <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath}/>
       </div>
       <div className="stack-vertical">
-        <TapKegInput/>
+        <TapKegInput onTapKegSubmission={props.onTapKegSubmission}/>
         <EditKeg/>
       </div>
     </div>

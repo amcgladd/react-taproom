@@ -56,8 +56,14 @@ class App extends React.Component {
     this.state = {
       masterKegList
     };
+    this.handleTapKegSubmission = this.handleTapKegSubmission.bind(this);
   }
 
+  handleTapKegSubmission(newKeg){
+    var newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
 
   render(){
     return (
@@ -71,7 +77,8 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' render={()=><PatronView kegList={this.state.masterKegList}/>} />
-          <Route path='/adminview' render={(props)=><AdminView kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} />} />
+          <Route path='/adminview' render={(props)=><AdminView kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}
+            onTapKegSubmission={this.handleTapKegSubmission} />} />
           <Route component={Error404} />
         </Switch>
       </div>
