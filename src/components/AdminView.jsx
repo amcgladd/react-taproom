@@ -20,10 +20,14 @@ function AdminView(props){
         }
         `}</style>
       <div>
-        <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath}/>
+        <KegList
+          kegList={props.kegList}
+          currentRouterPath={props.currentRouterPath}
+          onDeleteKegSubmission={props.onDeleteKegSubmission} />
       </div>
       <div className="stack-vertical">
-        <TapKegInput onTapKegSubmission={props.onTapKegSubmission}/>
+        <TapKegInput
+          onTapKegSubmission={props.onTapKegSubmission}/>
         <EditKeg/>
       </div>
     </div>
@@ -33,7 +37,8 @@ function AdminView(props){
 AdminView.propTypes = {
   kegList: PropTypes.array,
   currentRouterPath: PropTypes.string.isRequired,
-  onTapKegSubmission: PropTypes.func
+  onTapKegSubmission: PropTypes.func,
+  onDeleteKegSubmission: PropTypes.func
 };
 
 export default AdminView;

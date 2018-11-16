@@ -15,14 +15,15 @@ function KegList(props){
         `}</style>
       <h1>Keg List</h1>
       <SortBar/>
-      {props.kegList.map((keg, index) =>
+      {props.kegList.map((keg) =>
         <Keg name={keg.name}
           type={keg.type}
           price={keg.price}
           abv={keg.abv}
           remaining={keg.remaining}
           currentRouterPath={props.currentRouterPath}
-          key={index}
+          key={keg.id}
+          onDeleteKegSubmission={props.onDeleteKegSubmission}
         />
       )}
     </div>

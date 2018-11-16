@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
+
 
 function TapKegInput(props) {
 
@@ -16,7 +18,8 @@ function TapKegInput(props) {
       type: _type.value,
       price: parseInt(_price.value),
       abv: parseInt(_abv.value),
-      remaining: parseInt(_remaining.value)
+      remaining: parseInt(_remaining.value),
+      id: v4()
     });
     _name.value = '';
     _type.value = '';

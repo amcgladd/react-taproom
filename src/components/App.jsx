@@ -11,42 +11,48 @@ const masterKegList = [
     type: 'Ale',
     abv: 6.8,
     price: 7,
-    remaining: 20
+    remaining: 20,
+    id: 1
   },
   {
     name: 'Tart N Juicy',
     type: 'Ale',
     abv: 4.5,
     price: 6,
-    remaining: 60
+    remaining: 60,
+    id: 2
   },
   {
     name: 'Hamm\'s',
     type: 'Stout',
     abv: 4.7,
     price: 3,
-    remaining: 65
+    remaining: 65,
+    id: 3
   },
   {
     name: 'Prismatic',
     type: 'IPA',
     abv:  5.9,
     price: 6,
-    remaining: 75
+    remaining: 75,
+    id: 4
   },
   {
     name: 'Juicy Haze',
     type: 'IPA',
     abv:  7.5,
     price: 6,
-    remaining: 18
+    remaining: 18,
+    id: 5
   },
   {
     name: '8 Hop',
     type: 'Ale',
     abv:  5.5,
     price: 6,
-    remaining: 58
+    remaining: 58,
+    id: 6
   }
 ];
 
@@ -65,8 +71,11 @@ class App extends React.Component {
     this.setState({masterKegList: newMasterKegList});
   }
 
-  handleDeleteKegSubmission(){
-    console.log('hey, delete button works')
+  handleDeleteKegSubmission(id){
+    console.log("Delete button is firing");
+    var newMasterKegList = this.state.masterKegList.slice();
+    newMasterKegList.slice(id);
+    this.setState({masterKegList: newMasterKegList});
   }
 
   render(){
@@ -79,11 +88,14 @@ class App extends React.Component {
           }
         `}</style>
         <Header/>
-        <p onClick={this.handleDeleteKegSubmission}>Practice Deletion Function</p>
         <Switch>
-          <Route exact path='/' render={()=><PatronView kegList={this.state.masterKegList}/>} />
-          <Route path='/adminview' render={(props)=><AdminView kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}
-            onTapKegSubmission={this.handleTapKegSubmission} />} />
+          <Route exact path='/'
+            render={()=><PatronView kegList={this.state.masterKegList}/>} />
+          <Route
+            path='/adminview'
+            render={(props)=><AdminView   kegList={this.state.masterKegList}        currentRouterPath={props.location.pathname}
+            onTapKegSubmission={this.handleTapKegSubmission}
+            onDeleteKegSubmission={this.handleDeleteKegSubmission}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

@@ -64,6 +64,8 @@ ng serve --open
 
 * Add ability to add kegs to masterKegList- Complete
 
+* Implement uuid to each keg object
+
 * Allow admin to delete a keg
 
 * Allow admin to edit a keg's properties

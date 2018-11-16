@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function DeleteButton() {
+function DeleteButton(props) {
   return (
     <div>
-      <button>Delete</button>
+      <button onClick={() => {props.onDeleteKegSubmission(props.key);}}>Delete</button>
     </div>
   );
 }
+
+DeleteButton.propTypes = {
+  onDeleteKegSubmission: PropTypes.func
+};
 
 export default DeleteButton;
