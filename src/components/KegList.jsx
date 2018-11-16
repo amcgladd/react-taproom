@@ -16,7 +16,8 @@ function KegList(props){
       <h1>Keg List</h1>
       <SortBar/>
       {props.kegList.map((keg) =>
-        <Keg name={keg.name}
+        <Keg 
+          name={keg.name}
           type={keg.type}
           price={keg.price}
           abv={keg.abv}
@@ -37,7 +38,8 @@ KegList.propTypes = {
   price: PropTypes.number,
   abv: PropTypes.number,
   remaining: PropTypes.number,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onDeleteKegSubmission: PropTypes.func
 };
 
 export default KegList;

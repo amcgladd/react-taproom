@@ -21,7 +21,9 @@ function Keg(props){
       <h3>Remaining: {props.remaining}</h3>
       <EditButton />
       <SellButton />
-      <DeleteButton onDeleteKegSubmission={props.onDeleteKegSubmission} />
+      <DeleteButton
+        key={props.key}
+        onDeleteKegSubmission={props.onDeleteKegSubmission} />
       <hr/>
     </div>
     ;

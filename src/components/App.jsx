@@ -72,7 +72,7 @@ class App extends React.Component {
   }
 
   handleDeleteKegSubmission(id){
-    console.log("Delete button is firing");
+    console.log(id);
     var newMasterKegList = this.state.masterKegList.slice();
     newMasterKegList.slice(id);
     this.setState({masterKegList: newMasterKegList});
@@ -94,8 +94,8 @@ class App extends React.Component {
           <Route
             path='/adminview'
             render={(props)=><AdminView   kegList={this.state.masterKegList}        currentRouterPath={props.location.pathname}
-            onTapKegSubmission={this.handleTapKegSubmission}
-            onDeleteKegSubmission={this.handleDeleteKegSubmission}/>} />
+              onTapKegSubmission={this.handleTapKegSubmission}
+              onDeleteKegSubmission={this.handleDeleteKegSubmission}/>} />
           <Route component={Error404} />
         </Switch>
       </div>
