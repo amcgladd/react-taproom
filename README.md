@@ -1,6 +1,6 @@
 # React Taproom
 
-React application that manages inventory of a taproom, with options fields to view, add, and edit kegs, depending on who is user role.
+React application that manages inventory of a taproom, with options fields to view, add, and edit kegs, depending on who user's role.
 
 ## Description
 
@@ -55,6 +55,13 @@ ng serve --open
 ## Component Map
 
 ![component-map](https://github.com/amcgladd/react-taproom/blob/master/taproom-react-component-map.png)
+
+## Features to be added
+
+* Handle error routing
+
+* Conditional views for admin and patron routes
+
 
 ## Notes
 

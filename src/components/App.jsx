@@ -3,12 +3,13 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import PatronView from './PatronView';
 import AdminView from './AdminView';
+import Error404 from './Error404';
+
 
 
 class App extends React.Component {
-  constructor() {}
-
-  render() {}
+  
+  render(){
   return (
     <div>
       <style jsx>{`
@@ -21,10 +22,12 @@ class App extends React.Component {
       <Switch>
         <Route exact path='/' component={PatronView} />
         <Route path='/adminview' component={AdminView} />
+        <Route component={Error404} />
       </Switch>
 
     </div>
   );
+}
 }
 
 export default App;
