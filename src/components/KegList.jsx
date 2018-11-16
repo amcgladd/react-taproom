@@ -29,7 +29,7 @@ function KegList({ kegList }){
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.object,
+  kegList: PropTypes.array,
   name: PropTypes.string,
   type: PropTypes.string,
   price: PropTypes.number,

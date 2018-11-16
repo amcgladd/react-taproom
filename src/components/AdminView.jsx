@@ -4,8 +4,8 @@ import TapKeg from './TapKeg';
 import EditKeg from './EditKeg';
 import PropTypes from  'prop-types';
 
-function AdminView(props){
-
+function AdminView(props, {currentRouterPath}){
+console.log(props.currentRouterPath);
   return (
     <div>
       <style jsx>{`
@@ -32,7 +32,8 @@ function AdminView(props){
 }
 
 AdminView.propTypes = {
-  kegList: PropTypes.object
+  kegList: PropTypes.array,
+  currentRouterPath: PropTypes.string.isRequired
 };
 
 export default AdminView;

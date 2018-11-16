@@ -71,7 +71,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' render={()=><PatronView kegList={this.state.masterKegList}/>} />
-          <Route path='/adminview' render={()=><AdminView kegList={this.state.masterKegList}/>} />
+          <Route path='/adminview' render={(props)=><AdminView kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} />} />
           <Route component={Error404} />
         </Switch>
       </div>
