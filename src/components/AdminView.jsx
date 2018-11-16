@@ -18,13 +18,13 @@ function AdminView(){
           flex-direction: column;
         }
         `}</style>
-        <div>
-          <KegList/>
-        </div>
-        <div className="stack-vertical">
-          <TapKeg/>
-          <EditKeg/>
-        </div>
+      <div>
+        <KegList/>
+      </div>
+      <div className="stack-vertical">
+        <TapKeg/>
+        <EditKeg/>
+      </div>
     </div>
   );
 }

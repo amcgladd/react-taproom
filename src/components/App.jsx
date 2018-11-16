@@ -10,24 +10,24 @@ import Error404 from './Error404';
 class App extends React.Component {
   
   render(){
-  return (
-    <div>
-      <style jsx>{`
+    return (
+      <div>
+        <style jsx>{`
           div {
             background-color: #EDB749;
             font-family: 'Montserrat', sans-serif;;
           }
         `}</style>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={PatronView} />
-        <Route path='/adminview' component={AdminView} />
-        <Route component={Error404} />
-      </Switch>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={PatronView} />
+          <Route path='/adminview' component={AdminView} />
+          <Route component={Error404} />
+        </Switch>
 
-    </div>
-  );
-}
+      </div>
+    );
+  }
 }
 
 export default App;
