@@ -58,7 +58,7 @@ ng serve --open
 
 ## Features to be added
 
-* Handle error routing
+* Handle error routing- Complete
 
 * Conditional views for admin and patron routes
 

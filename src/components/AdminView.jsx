@@ -2,8 +2,10 @@ import React from 'react';
 import KegList from './KegList';
 import TapKeg from './TapKeg';
 import EditKeg from './EditKeg';
+import PropTypes from  'prop-types';
 
-function AdminView(){
+function AdminView(props){
+
   return (
     <div>
       <style jsx>{`
@@ -19,7 +21,7 @@ function AdminView(){
         }
         `}</style>
       <div>
-        <KegList/>
+        <KegList kegList={props.kegList}/>
       </div>
       <div className="stack-vertical">
         <TapKeg/>
@@ -28,5 +30,9 @@ function AdminView(){
     </div>
   );
 }
+
+AdminView.propTypes = {
+  kegList: PropTypes.object
+};
 
 export default AdminView;
