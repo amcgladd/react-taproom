@@ -63,18 +63,23 @@ class App extends React.Component {
       masterKegList
     };
     this.handleTapKegSubmission = this.handleTapKegSubmission.bind(this);
+    this.handleDeleteKegSubmission = this.handleDeleteKegSubmission.bind(this);
   }
 
   handleTapKegSubmission(newKeg){
-    var newMasterKegList = this.state.masterKegList.slice();
+    let newMasterKegList = this.state.masterKegList.slice();
+    console.log(masterKegList);
     newMasterKegList.push(newKeg);
     this.setState({masterKegList: newMasterKegList});
   }
 
   handleDeleteKegSubmission(id){
-    console.log(id);
-    var newMasterKegList = this.state.masterKegList.slice();
-    newMasterKegList.slice(id);
+    let newMasterKegList = this.state.masterKegList.slice();
+    for ( var i = 0; i < newMasterKegList.length; i++) {
+      if ( newMasterKegList[i].id === id){
+        newMasterKegList.splice(i,1);
+      }
+    }
     this.setState({masterKegList: newMasterKegList});
   }
 
