@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import EditButton from './EditButton';
 
 function Keg(props){
   const adminKegDisplay =
@@ -15,7 +16,7 @@ function Keg(props){
       <h3>Price: {props.price}</h3>
       <h3>ABV: {props.abv}</h3>
       <h3>Remaining: {props.remaining}</h3>
-      <button>Edit</button>
+      <EditButton />
       <button>Sell</button>
       <button>Delete</button>
       <hr/>

@@ -60,14 +60,13 @@ ng serve --open
 
 * Handle error routing- Complete
 
-* Conditional views for admin and patron routes
+* Conditional views for admin and patron routes- Complete
 
+* Add functionality to admin keg buttons
 
 ## Notes
 
 Unforeseen issues / questions:
-
-* How to include Edit and Sell Button Components for only Admins and not Patrons e.g. If-statements based on URL route
 
 * How to dynamically change data e.g. add a keg delete or edit a keg on the masterKegList.
 
