@@ -52,9 +52,19 @@ ng serve --open
 * JavaScript / JSX
 * HTML/CSS
 
-## Component Map
+## Component Map version 1
 
 ![component-map](https://github.com/amcgladd/react-taproom/blob/master/taproom-react-component-map.png)
+
+## Component Map version 2
+Notes on version 2:
+
+* Added Delete Button subcomponent to Admin's KegList component
+
+* Collapsed Tap Keg and Tap Keg Input Components into one
+
+![component-map](https://github.com/amcgladd/react-taproom/blob/master/taproom-react-component-mapv2.png)
+
 
 ## Features to be added
 
@@ -64,21 +74,21 @@ ng serve --open
 
 * Add ability to add kegs to masterKegList- Complete
 
-* Implement uuid to each keg object
+* Implement uuid to each keg object- Complete
 
-* Allow admin to delete a keg
+* Allow admin to delete a keg- Complete
 
 * Allow admin to edit a keg's properties
+
+* Style kegs according to type of beer
 
 ## Notes
 
 Unforeseen issues / questions:
 
-* How to dynamically change data e.g. add a keg delete or edit a keg on the masterKegList.
+* How to dynamically edit a keg on the masterKegList.
 
 * How to implement a styling framework like Google Materialize
-
-* How to include html for buttons in a JSX loop without them being props of the data
 
 * Alternatively, should each button be a subcomponent of the keg component?
 
