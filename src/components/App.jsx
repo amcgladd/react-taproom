@@ -5,7 +5,10 @@ import PatronView from './PatronView';
 import AdminView from './AdminView';
 
 
-function App(){
+class App extends React.Component {
+  constructor() {}
+
+  render() {}
   return (
     <div>
       <style jsx>{`
