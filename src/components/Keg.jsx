@@ -19,10 +19,11 @@ function Keg(props){
       <h3>Price: {props.price}</h3>
       <h3>ABV: {props.abv}</h3>
       <h3>Remaining: {props.remaining}</h3>
+      <h3>Key: {props.id}</h3>
       <EditButton />
       <SellButton />
       <DeleteButton
-        key={props.key}
+        id={props.id}
         onDeleteKegSubmission={props.onDeleteKegSubmission} />
       <hr/>
     </div>
@@ -67,6 +68,7 @@ Keg.propTypes = {
   price: PropTypes.number.isRequired,
   abv: PropTypes.number,
   remaining: PropTypes.number,
+  key: PropTypes.string,
   currentRouterPath: PropTypes.string
 };
 

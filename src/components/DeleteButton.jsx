@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function DeleteButton(props) {
+
   return (
     <div>
       <button
-        onClick={() =>{props.onDeleteKegSubmission(props.key);}}
+        onClick={() =>{props.onDeleteKegSubmission(props.id);}}
         >Delete</button>
     </div>
   );

@@ -16,14 +16,14 @@ function KegList(props){
       <h1>Keg List</h1>
       <SortBar/>
       {props.kegList.map((keg) =>
-        <Keg 
+        <Keg
           name={keg.name}
           type={keg.type}
           price={keg.price}
           abv={keg.abv}
           remaining={keg.remaining}
           currentRouterPath={props.currentRouterPath}
-          key={keg.id}
+          id={keg.id}
           onDeleteKegSubmission={props.onDeleteKegSubmission}
         />
       )}
