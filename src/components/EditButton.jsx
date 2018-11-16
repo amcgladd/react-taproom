@@ -3,9 +3,9 @@ import React from 'react';
 function EditButton(){
   return(
     <div>
-      <button>Test Edit Button</button>
+      <button>Edit</button>
     </div>
-  )
+  );
 }
 
 export default EditButton;

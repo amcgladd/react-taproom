@@ -62,6 +62,8 @@ ng serve --open
 
 * Conditional views for admin and patron routes- Complete
 
+* Add ability to add kegs to masterKegList
+
 * Add functionality to admin keg buttons
 
 ## Notes

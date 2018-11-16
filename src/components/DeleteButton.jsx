@@ -3,7 +3,7 @@ import React from 'react';
 function DeleteButton() {
   return (
     <div>
-    <button>Test Delete Button</button>
+      <button>Delete</button>
     </div>
   );
 }

@@ -26,21 +26,21 @@ function Keg(props){
     </div>
     ;
 
-    const patronKegDisplay =
-      <div>
-        <style jsx>{`
+  const patronKegDisplay =
+    <div>
+      <style jsx>{`
           div {
             max-width: 400px;
             background-color: #59D2FF;
           }
           `}</style>
-        <h3>Name: {props.name}</h3>
-        <h3>Type: {props.type}</h3>
-        <h3>Price: {props.price}</h3>
-        <h3>ABV: {props.abv}</h3>
-        <h3>Remaining: {props.remaining}</h3>
-        <hr/>
-      </div>
+      <h3>Name: {props.name}</h3>
+      <h3>Type: {props.type}</h3>
+      <h3>Price: {props.price}</h3>
+      <h3>ABV: {props.abv}</h3>
+      <h3>Remaining: {props.remaining}</h3>
+      <hr/>
+    </div>
       ;
 
 
