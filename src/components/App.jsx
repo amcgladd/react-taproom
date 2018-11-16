@@ -65,6 +65,10 @@ class App extends React.Component {
     this.setState({masterKegList: newMasterKegList});
   }
 
+  handleDeleteKegSubmission(){
+    console.log('hey, delete button works')
+  }
+
   render(){
     return (
       <div>
@@ -75,6 +79,7 @@ class App extends React.Component {
           }
         `}</style>
         <Header/>
+        <p onClick={this.handleDeleteKegSubmission}>Practice Deletion Function</p>
         <Switch>
           <Route exact path='/' render={()=><PatronView kegList={this.state.masterKegList}/>} />
           <Route path='/adminview' render={(props)=><AdminView kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}

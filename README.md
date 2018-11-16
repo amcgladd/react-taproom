@@ -62,9 +62,11 @@ ng serve --open
 
 * Conditional views for admin and patron routes- Complete
 
-* Add ability to add kegs to masterKegList
+* Add ability to add kegs to masterKegList- Complete
 
-* Add functionality to admin keg buttons
+* Allow admin to delete a keg
+
+* Allow admin to edit a keg's properties
 
 ## Notes
 

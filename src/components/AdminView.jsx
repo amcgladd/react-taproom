@@ -32,7 +32,8 @@ function AdminView(props){
 
 AdminView.propTypes = {
   kegList: PropTypes.array,
-  currentRouterPath: PropTypes.string.isRequired
+  currentRouterPath: PropTypes.string.isRequired,
+  onTapKegSubmission: PropTypes.func
 };
 
 export default AdminView;
