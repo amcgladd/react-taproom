@@ -1,5 +1,6 @@
 import React from 'react';
-import AddButton from './AddButton';
+import PropTypes from 'prop-types';
+
 
 function TapKegInput(props) {
 
@@ -10,13 +11,14 @@ function TapKegInput(props) {
   let _remaining = null;
 
   function handleTapKegSubmission(event) {
+    console.log("tap button pushed!");
     event.preventDefault();
     props.onTapKegSubmission({
       name: _name.value,
       type: _type.value,
-      _price: _price.value,
-      _abv: _abv.value,
-      _remaining: _remaining.value
+      price: _price.value,
+      abv: _abv.value,
+      remaining: _remaining.value
     });
     _name.value = '';
     _type.value = '';
@@ -26,7 +28,13 @@ function TapKegInput(props) {
   }
 
   return (
-    <div>
+    <div className="tapKegStyle">
+      <style jsx>{`
+          .tapKegStyle {
+            background-color: #C980A1;
+          }
+        `}</style>
+      <h1>Tap New Keg</h1>
       <form onSubmit={handleTapKegSubmission}>
         <div>
           <label>Name:</label>
@@ -60,10 +68,14 @@ function TapKegInput(props) {
             id='remaining'
             ref={(input) => {_remaining = input;}}/>
         </div>
-        <AddButton/>
+      <button type="submit">Tap Keg</button>
       </form>
     </div>
   );
 }
+
+TapKegInput.propTypes = {
+  onTapKegSubmission: PropTypes.func
+};
 
 export default TapKegInput;

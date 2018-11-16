@@ -1,8 +1,8 @@
 import React from 'react';
 import KegList from './KegList';
-import TapKeg from './TapKeg';
 import EditKeg from './EditKeg';
 import PropTypes from  'prop-types';
+import TapKegInput from './TapKegInput';
 
 function AdminView(props){
   return (
@@ -23,7 +23,7 @@ function AdminView(props){
         <KegList kegList={props.kegList} currentRouterPath={props.currentRouterPath}/>
       </div>
       <div className="stack-vertical">
-        <TapKeg/>
+        <TapKegInput/>
         <EditKeg/>
       </div>
     </div>
