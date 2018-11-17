@@ -80,6 +80,8 @@ Notes on version 2:
 
 * Allow admin to edit a keg's properties
 
+* Create dropdown to manage keg types
+
 * Style kegs according to type of beer
 
 ## Notes

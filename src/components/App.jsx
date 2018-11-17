@@ -32,7 +32,7 @@ const masterKegList = [
   },
   {
     name: 'Prismatic',
-    type: 'IPA',
+    type: 'Stout',
     abv:  5.9,
     price: 6,
     remaining: 75,
@@ -40,7 +40,7 @@ const masterKegList = [
   },
   {
     name: 'Juicy Haze',
-    type: 'IPA',
+    type: 'Ale',
     abv:  7.5,
     price: 6,
     remaining: 18,
