@@ -2,7 +2,7 @@ import React from 'react';
 import KegList from './KegList';
 import PropTypes from 'prop-types';
 
-function PatronView({ kegList }) {
+function PatronView(props) {
   return (
     <div>
       <style jsx>{`
@@ -14,7 +14,9 @@ function PatronView({ kegList }) {
             align-items: center;
           }
         `}</style>
-      <KegList kegList={kegList}/>
+      <KegList kegList={props.kegList}
+        currentRouterPath={props.currentRouterPath}
+        />
     </div>
   );
 }

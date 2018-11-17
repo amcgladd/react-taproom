@@ -95,12 +95,14 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/'
-            render={()=><PatronView kegList={this.state.masterKegList}/>} />
+            render={(props)=><PatronView
+            kegList={this.state.masterKegList}
+            currentRouterPath={props.location.pathname}/>} />
           <Route
             path='/adminview'
             render={(props)=><AdminView   kegList={this.state.masterKegList}        currentRouterPath={props.location.pathname}
-              onTapKegSubmission={this.handleTapKegSubmission}
-              onDeleteKegSubmission={this.handleDeleteKegSubmission}/>} />
+            onTapKegSubmission={this.handleTapKegSubmission}
+            onDeleteKegSubmission={this.handleDeleteKegSubmission}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

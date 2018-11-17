@@ -7,7 +7,7 @@ function DeleteButton(props) {
     <div>
       <button
         onClick={() =>{props.onDeleteKegSubmission(props.id);}}
-        >Delete</button>
+      >Delete</button>
     </div>
   );
 }

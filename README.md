@@ -98,6 +98,8 @@ Unforeseen issues / questions:
 
 * Using DropDown selector for Type chooser in Tap and Edit Keg components
 
+* Formatting issues related to routing between admin and patron views
+
 ## Author
 
 * **AJ Mcgladdery** - [Github](https://github.com/amcgladd)

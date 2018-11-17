@@ -42,8 +42,7 @@ function Keg(props){
       <h3>ABV: {props.abv}</h3>
       <h3>Remaining: {props.remaining}</h3>
       <hr/>
-    </div>
-      ;
+    </div>;
 
 
   if(props.currentRouterPath === '/adminview'){

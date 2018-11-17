@@ -62,12 +62,12 @@ function TapKegInput(props) {
 
         <div>
           <label>Type:</label>
-            <select id='type' ref={(select) => {_type = select;}}>
-               <option value="Ale">Ale</option>
-               <option value="Lager">Lager</option>
-               <option value="Stout">Stout</option>
-               <option value="Other">Other</option>
-             </select>
+          <select id='type' ref={(select) => {_type = select;}}>
+            <option value="Ale">Ale</option>
+            <option value="Lager">Lager</option>
+            <option value="Stout">Stout</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
         <div>
